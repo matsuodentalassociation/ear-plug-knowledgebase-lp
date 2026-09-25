@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vital Ear Plug｜関係者向け製品・導入ガイド</title>
 
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+
   <style>
     :root {
       --navy: #102a43;
@@ -122,7 +126,6 @@
       color: rgba(255, 255, 255, 0.77);
     }
 
-    /* 内部資料バナー */
     .internal-bar {
       padding: 8px 20px;
       color: var(--white);
@@ -133,7 +136,6 @@
       letter-spacing: 0.12em;
     }
 
-    /* ナビゲーション */
     .nav {
       position: sticky;
       top: 0;
@@ -172,7 +174,6 @@
       text-decoration: none;
     }
 
-    /* ヒーロー */
     .hero {
       position: relative;
       overflow: hidden;
@@ -218,7 +219,6 @@
       font-weight: 800;
       letter-spacing: 0.08em;
     }
-
 
     .ryusen-catch {
       width: fit-content;
@@ -291,7 +291,6 @@
       font-size: 12px;
     }
 
-    /* 製品定義 */
     .definition-box {
       display: grid;
       grid-template-columns: 150px 1fr;
@@ -319,7 +318,6 @@
       line-height: 1.8;
     }
 
-    /* 技術継承 */
     .origin-grid {
       display: grid;
       grid-template-columns: 0.88fr 1.12fr;
@@ -361,7 +359,6 @@
       color: var(--blue);
     }
 
-    /* 3領域 */
     .cards {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -401,7 +398,6 @@
       font-size: 14px;
     }
 
-    /* 耳マッサージ比較 */
     .comparison-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -476,7 +472,6 @@
       font-size: 10px;
     }
 
-    /* メカニズム */
     .mechanism-flow {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -544,7 +539,6 @@
       font-size: 13px;
     }
 
-    /* 外音取り込み孔 */
     .sound-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -620,7 +614,6 @@
       font-weight: 700;
     }
 
-    /* くすぐったさ */
     .tickle-intro {
       display: grid;
       grid-template-columns: 0.78fr 1.22fr;
@@ -726,7 +719,6 @@
       font-weight: 700;
     }
 
-    /* サイズ選定 */
     .fit-layout {
       display: grid;
       grid-template-columns: 0.8fr 1.2fr;
@@ -815,7 +807,6 @@
       font-size: 10px;
     }
 
-    /* 装着方法 */
     .wear-steps {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -895,7 +886,6 @@
       font-weight: 800;
     }
 
-    /* 手入れ */
     .care-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -933,12 +923,11 @@
       margin-top: 25px;
       padding: 21px 24px;
       border-left: 4px solid var(--orange);
-      background: var(--orange-light);
       color: #67482e;
+      background: var(--orange-light);
       font-size: 14px;
     }
 
-    /* まとめ */
     .summary-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -978,12 +967,109 @@
       font-size: 12px;
     }
 
-    footer {
-      padding: 30px 0;
-      color: var(--muted);
-      background: #f4f8fa;
+    .closing {
+      position: relative;
+      overflow: hidden;
+      padding: 112px 0 0;
+      color: var(--white);
+      background:
+        radial-gradient(
+          circle at 85% 10%,
+          rgba(105, 196, 215, 0.22),
+          transparent 32%
+        ),
+        radial-gradient(
+          circle at 10% 85%,
+          rgba(36, 107, 145, 0.2),
+          transparent 35%
+        ),
+        linear-gradient(145deg, var(--navy-deep), var(--navy));
+    }
+
+    .closing::before {
+      position: absolute;
+      top: -220px;
+      right: -180px;
+      width: 560px;
+      height: 560px;
+      border: 1px solid rgba(105, 196, 215, 0.15);
+      border-radius: 50%;
+      content: "";
+    }
+
+    .closing-inner {
+      position: relative;
+      z-index: 1;
+      max-width: 930px;
+      margin: 0 auto;
       text-align: center;
-      font-size: 11px;
+    }
+
+    .closing-eyebrow {
+      margin-bottom: 20px;
+      color: var(--aqua);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.17em;
+      text-transform: uppercase;
+    }
+
+    .closing-title {
+      margin-bottom: 38px;
+      color: var(--white);
+      font-size: clamp(32px, 5vw, 56px);
+      line-height: 1.45;
+      letter-spacing: -0.025em;
+    }
+
+    .closing-copy {
+      max-width: 830px;
+      margin: 0 auto;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 16px;
+      line-height: 2.15;
+      text-align: left;
+    }
+
+    .closing-message {
+      margin-top: 52px;
+      padding: 30px 36px;
+      border: 1px solid rgba(105, 196, 215, 0.3);
+      border-radius: 18px;
+      color: var(--white);
+      background: rgba(255, 255, 255, 0.06);
+      font-size: clamp(17px, 2.2vw, 21px);
+      font-weight: 700;
+      line-height: 1.9;
+      text-align: center;
+    }
+
+    .closing-information {
+      position: relative;
+      z-index: 1;
+      margin-top: 82px;
+      padding: 24px 0 26px;
+      border-top: 1px solid rgba(105, 196, 215, 0.1);
+      background: #02091b;
+    }
+
+    .closing-credits {
+      color: rgba(105, 196, 215, 0.54);
+      text-align: center;
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 1.7;
+      letter-spacing: 0.025em;
+    }
+
+    .closing-credits p + p {
+      margin-top: 2px;
+    }
+
+    .credit-separator {
+      display: inline-block;
+      margin: 0 7px;
+      color: rgba(105, 196, 215, 0.36);
     }
 
     @media (max-width: 900px) {
@@ -1025,6 +1111,47 @@
       .origin-visual {
         max-width: 560px;
         margin: 0 auto;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .closing {
+        padding-top: 68px;
+      }
+
+      .closing-title {
+        margin-bottom: 29px;
+        font-size: 32px;
+      }
+
+      .closing-copy {
+        font-size: 14px;
+        line-height: 2;
+      }
+
+      .closing-message {
+        margin-top: 37px;
+        padding: 23px 20px;
+        font-size: 16px;
+        text-align: left;
+      }
+
+      .closing-information {
+        margin-top: 58px;
+        padding: 22px 0 24px;
+      }
+
+      .closing-credits {
+        font-size: 9px;
+        line-height: 1.75;
+      }
+
+      .credit-row {
+        display: block;
+      }
+
+      .credit-separator {
+        display: none;
       }
     }
 
@@ -1087,193 +1214,182 @@
         padding: 15px;
       }
     }
-  
-
-    /* クロージング */
-    .closing {
-      position: relative;
-      overflow: hidden;
-      padding: 112px 0 0;
-      color: var(--white);
-      background:
-        radial-gradient(circle at 85% 10%, rgba(105, 196, 215, 0.22), transparent 32%),
-        radial-gradient(circle at 10% 85%, rgba(36, 107, 145, 0.2), transparent 35%),
-        linear-gradient(145deg, var(--navy-deep), var(--navy));
-    }
-
-    .closing::before {
-      position: absolute;
-      top: -220px;
-      right: -180px;
-      width: 560px;
-      height: 560px;
-      border: 1px solid rgba(105, 196, 215, 0.15);
-      border-radius: 50%;
-      content: "";
-    }
-
-    .closing-inner {
-      position: relative;
-      z-index: 1;
-      max-width: 930px;
-      margin: 0 auto;
-      text-align: center;
-    }
-
-    .closing-eyebrow {
-      margin-bottom: 20px;
-      color: var(--aqua);
-      font-size: 12px;
-      font-weight: 800;
-      letter-spacing: 0.17em;
-      text-transform: uppercase;
-    }
-
-    .closing-title {
-      margin-bottom: 38px;
-      color: var(--white);
-      font-size: clamp(32px, 5vw, 56px);
-      line-height: 1.45;
-      letter-spacing: -0.025em;
-    }
-
-    .closing-copy {
-      max-width: 830px;
-      margin: 0 auto;
-      color: rgba(255, 255, 255, 0.8);
-      font-size: 16px;
-      line-height: 2.15;
-      text-align: left;
-    }
-
-    .closing-message {
-      margin-top: 52px;
-      padding: 30px 36px;
-      border: 1px solid rgba(105, 196, 215, 0.3);
-      border-radius: 18px;
-      color: var(--white);
-      background: rgba(255, 255, 255, 0.06);
-      font-size: clamp(17px, 2.2vw, 21px);
-      font-weight: 700;
-      line-height: 1.9;
-      text-align: center;
-    }
-
-    /* 見本形式の監修・販売元・制作表記 */
-    .closing-information {
-      position: relative;
-      z-index: 1;
-      margin-top: 82px;
-      padding: 24px 0 26px;
-      border-top: 1px solid rgba(105, 196, 215, 0.1);
-      background: #02091b;
-    }
-
-    .closing-credits {
-      color: rgba(105, 196, 215, 0.54);
-      text-align: center;
-      font-size: 10px;
-      font-weight: 400;
-      line-height: 1.7;
-      letter-spacing: 0.025em;
-    }
-
-    .closing-credits p + p { margin-top: 2px; }
-
-    .credit-separator {
-      display: inline-block;
-      margin: 0 7px;
-      color: rgba(105, 196, 215, 0.36);
-    }
-
-    @media (max-width: 700px) {
-      .closing { padding-top: 68px; }
-      .closing-title { margin-bottom: 29px; font-size: 32px; }
-      .closing-copy { font-size: 14px; line-height: 2; }
-      .closing-message {
-        margin-top: 37px;
-        padding: 23px 20px;
-        font-size: 16px;
-        text-align: left;
-      }
-      .closing-information { margin-top: 58px; padding: 22px 0 24px; }
-      .closing-credits { font-size: 9px; line-height: 1.75; }
-      .credit-row { display: block; }
-      .credit-separator { display: none; }
-    }
-
   </style>
 
-  <!-- 自動最新版取得：公開中の同じHTMLを毎回確認し、更新時は自動反映 -->
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-  <meta http-equiv="Pragma" content="no-cache">
-  <meta http-equiv="Expires" content="0">
   <script>
     (() => {
       "use strict";
 
       const CHECK_INTERVAL_MS = 60 * 1000;
+      const RUNTIME_HASH_META = "remote-content-hash";
+
       const sourceUrl = new URL(window.location.href);
       sourceUrl.search = "";
       sourceUrl.hash = "";
-      const storageKey = `latest-html:${sourceUrl.pathname}`;
+
       let checking = false;
 
-      async function digest(text) {
-        const data = new TextEncoder().encode(text);
-        const hash = await crypto.subtle.digest("SHA-256", data);
-        return Array.from(new Uint8Array(hash))
-          .map(byte => byte.toString(16).padStart(2, "0"))
-          .join("");
+      async function createHash(text) {
+        if (
+          window.crypto &&
+          window.crypto.subtle &&
+          window.TextEncoder
+        ) {
+          const data = new TextEncoder().encode(text);
+          const hashBuffer = await crypto.subtle.digest(
+            "SHA-256",
+            data
+          );
+
+          return Array.from(new Uint8Array(hashBuffer))
+            .map(byte => byte.toString(16).padStart(2, "0"))
+            .join("");
+        }
+
+        let hash = 2166136261;
+
+        for (let index = 0; index < text.length; index += 1) {
+          hash ^= text.charCodeAt(index);
+          hash = Math.imul(hash, 16777619);
+        }
+
+        return (hash >>> 0).toString(16);
+      }
+
+      function getDisplayedHash() {
+        const hashMeta = document.querySelector(
+          `meta[name="${RUNTIME_HASH_META}"]`
+        );
+
+        return hashMeta
+          ? hashMeta.getAttribute("content") || ""
+          : "";
+      }
+
+      function insertRuntimeHash(html, hash) {
+        const runtimeMeta =
+          `<meta name="${RUNTIME_HASH_META}" content="${hash}">`;
+
+        return html.replace(
+          /<head([^>]*)>/i,
+          `<head$1>${runtimeMeta}`
+        );
       }
 
       async function fetchLatestHtml() {
-        if (checking || document.visibilityState === "hidden") return;
+        if (
+          checking ||
+          document.visibilityState === "hidden"
+        ) {
+          return;
+        }
+
         checking = true;
 
         try {
           const requestUrl = new URL(sourceUrl.href);
-          requestUrl.searchParams.set("_latest", Date.now().toString());
+
+          requestUrl.searchParams.set(
+            "_latest",
+            `${Date.now()}-${Math.random()
+              .toString(36)
+              .slice(2)}`
+          );
 
           const response = await fetch(requestUrl.href, {
             method: "GET",
             cache: "no-store",
+            credentials: "same-origin",
+            redirect: "follow",
             headers: {
-              "Cache-Control": "no-cache, no-store, must-revalidate",
+              "Cache-Control":
+                "no-cache, no-store, must-revalidate, max-age=0",
               "Pragma": "no-cache"
             }
           });
 
           if (!response.ok) {
-            throw new Error(`最新版を取得できませんでした: ${response.status}`);
+            throw new Error(
+              `最新版を取得できませんでした: ${response.status}`
+            );
           }
 
           const latestHtml = await response.text();
-          if (!latestHtml.includes("<!DOCTYPE html") || !latestHtml.includes("</html>")) {
-            throw new Error("取得したデータがHTMLではありません。");
+
+          if (
+            !/<!doctype html/i.test(latestHtml) ||
+            !/<\/html>/i.test(latestHtml)
+          ) {
+            throw new Error(
+              "取得したデータが正常なHTMLではありません。"
+            );
           }
 
-          const latestHash = await digest(latestHtml);
-          const displayedHash = sessionStorage.getItem(storageKey);
+          const latestHash = await createHash(latestHtml);
+          const displayedHash = getDisplayedHash();
 
-          if (displayedHash === latestHash) return;
+          if (
+            displayedHash &&
+            displayedHash === latestHash
+          ) {
+            return;
+          }
 
-          sessionStorage.setItem(storageKey, latestHash);
-          document.open();
-          document.write(latestHtml);
+          const updatedHtml = insertRuntimeHash(
+            latestHtml,
+            latestHash
+          );
+
+          document.open("text/html", "replace");
+          document.write(updatedHtml);
           document.close();
         } catch (error) {
-          console.error("自動更新の確認に失敗しました。現在のページを表示します。", error);
+          console.error(
+            "最新版を取得できなかったため、現在のページを表示します。",
+            error
+          );
         } finally {
           checking = false;
         }
       }
 
-      fetchLatestHtml();
-      window.setInterval(fetchLatestHtml, CHECK_INTERVAL_MS);
-      document.addEventListener("visibilitychange", () => {
-        if (document.visibilityState === "visible") fetchLatestHtml();
-      });
+      if (document.readyState === "loading") {
+        document.addEventListener(
+          "DOMContentLoaded",
+          fetchLatestHtml,
+          { once: true }
+        );
+      } else {
+        fetchLatestHtml();
+      }
+
+      window.setInterval(
+        fetchLatestHtml,
+        CHECK_INTERVAL_MS
+      );
+
+      document.addEventListener(
+        "visibilitychange",
+        () => {
+          if (document.visibilityState === "visible") {
+            fetchLatestHtml();
+          }
+        }
+      );
+
+      window.addEventListener(
+        "pageshow",
+        event => {
+          if (event.persisted) {
+            fetchLatestHtml();
+          }
+        }
+      );
+
+      window.addEventListener(
+        "online",
+        fetchLatestHtml
+      );
     })();
   </script>
 </head>
@@ -1299,7 +1415,6 @@
   </nav>
 
   <main id="top">
-    <!-- ファーストビュー -->
     <header class="hero">
       <div class="container hero-grid">
         <div>
@@ -1343,7 +1458,6 @@
       </div>
     </header>
 
-    <!-- 製品定義 -->
     <section class="section" id="definition">
       <div class="container">
         <div class="eyebrow">Product Definition</div>
@@ -1361,7 +1475,9 @@
         </p>
 
         <div class="definition-box">
-          <div class="definition-label">CORE DEFINITION</div>
+          <div class="definition-label">
+            CORE DEFINITION
+          </div>
 
           <div class="definition-text">
             耳に装着することで、
@@ -1373,7 +1489,6 @@
       </div>
     </section>
 
-    <!-- Vital PADからの展開 -->
     <section class="section section-sky">
       <div class="container origin-grid">
         <div class="origin-visual">
@@ -1416,7 +1531,6 @@
       </div>
     </section>
 
-    <!-- アプローチ領域 -->
     <section class="section">
       <div class="container">
         <div class="eyebrow">Approach Areas</div>
@@ -1434,12 +1548,7 @@
         <div class="cards">
           <article class="card">
             <div class="card-number">1</div>
-
-            <h3>
-              メンタル<br>
-              集中力・ストレス
-            </h3>
-
+            <h3>メンタル<br>集中力・ストレス</h3>
             <p>
               日中のイライラ、心の混乱、過度な緊張など、
               交感神経が優位になった状態からの切り替えにアプローチ。
@@ -1449,12 +1558,7 @@
 
           <article class="card">
             <div class="card-number">2</div>
-
-            <h3>
-              胃腸<br>
-              腸脳相関
-            </h3>
-
+            <h3>胃腸<br>腸脳相関</h3>
             <p>
               自律神経と胃腸機能は腸脳相関によって密接に関連しています。
               耳から迷走神経へ働きかけることで、
@@ -1464,12 +1568,7 @@
 
           <article class="card">
             <div class="card-number">3</div>
-
-            <h3>
-              食いしばり<br>
-              睡眠リカバリー
-            </h3>
-
+            <h3>食いしばり<br>睡眠リカバリー</h3>
             <p>
               耳周辺の緊張と、咬筋・側頭筋のつながりに着目。
               就寝中の食いしばり、途中覚醒後の再入眠、
@@ -1480,7 +1579,6 @@
       </div>
     </section>
 
-    <!-- 耳マッサージとの違い -->
     <section class="section section-ice">
       <div class="container">
         <div class="eyebrow">Massage vs Device</div>
@@ -1498,14 +1596,11 @@
         <div class="comparison-grid">
           <article class="comparison-card comparison-manual">
             <div class="comparison-label">耳マッサージ</div>
-
             <h3>手技と力加減に左右される</h3>
-
             <p>
               自分の手で耳を揉む場合は、
               刺激する場所、力の強さ、継続時間にばらつきが生じます。
             </p>
-
             <ul class="comparison-points">
               <li>手で刺激を続ける必要がある</li>
               <li>刺激の強さを一定に保ちにくい</li>
@@ -1516,14 +1611,11 @@
 
           <article class="comparison-card comparison-device">
             <div class="comparison-label">Vital Ear Plug</div>
-
             <h3>耳の適切な位置へ装着する</h3>
-
             <p>
               耳に合ったサイズを、耳珠・外耳孔と対輪の間へ装着し、
               体温由来の遠赤外線と形状による刺激を持続的に届けます。
             </p>
-
             <ul class="comparison-points">
               <li>手で揉み続ける必要がない</li>
               <li>耳へ装着した状態を維持できる</li>
@@ -1535,10 +1627,11 @@
       </div>
     </section>
 
-    <!-- 素材・製作 -->
     <section class="section section-dark" id="mechanism">
       <div class="container">
-        <div class="eyebrow">Material &amp; Manufacturing</div>
+        <div class="eyebrow">
+          Material &amp; Manufacturing
+        </div>
 
         <h2 class="section-title">
           特殊セラミックと歯科用樹脂で、<br>
@@ -1616,7 +1709,6 @@
       </div>
     </section>
 
-    <!-- 外音取り込み -->
     <section class="section" id="sound">
       <div class="container sound-grid">
         <figure class="sound-image">
@@ -1665,10 +1757,11 @@
       </div>
     </section>
 
-    <!-- くすぐったさ -->
     <section class="section section-sky" id="tickle">
       <div class="container">
-        <div class="eyebrow">Characteristic Sensation</div>
+        <div class="eyebrow">
+          Characteristic Sensation
+        </div>
 
         <h2 class="section-title">
           「くすぐったさ」は、<br>
@@ -1690,8 +1783,9 @@
             </p>
 
             <p>
-             このくすぐったさを
-              <strong>自律神経が整っている証</strong>として捉えています。
+              このくすぐったさを
+              <strong>自律神経が整っている証</strong>
+              として捉えています。
             </p>
 
             <p>
@@ -1705,9 +1799,7 @@
         <div class="tickle-patterns">
           <article class="tickle-card">
             <span class="pattern">PATTERN 01</span>
-
             <h3>装着直後からくすぐったい場合</h3>
-
             <p>
               Vital Ear Plugを装着した直後から
               くすぐったさを感じる場合は、
@@ -1718,9 +1810,7 @@
 
           <article class="tickle-card">
             <span class="pattern">PATTERN 02</span>
-
             <h3>しばらくしてからくすぐったい場合</h3>
-
             <p>
               装着直後にはくすぐったさを感じず、
               しばらく装着した後にくすぐったさが現れた場合は、
@@ -1736,7 +1826,6 @@
 
         <div class="interpretation">
           <h3>体感の扱い方</h3>
-
           <p>
             くすぐったさを感じ始めるタイミングや強さには個人差があります。
             くすぐったさが現れた後も無理に装着を継続せず、
@@ -1746,7 +1835,6 @@
       </div>
     </section>
 
-    <!-- サイズ選定 -->
     <section class="section section-ice" id="fitting">
       <div class="container fit-layout">
         <div class="size-guide">
@@ -1814,7 +1902,6 @@
       </div>
     </section>
 
-    <!-- 装着方法 -->
     <section class="section" id="wear">
       <div class="container">
         <div class="eyebrow">How to Wear</div>
@@ -1832,9 +1919,7 @@
         <div class="wear-steps">
           <article class="wear-step">
             <div class="wear-number">01</div>
-
             <h3>サイズを選ぶ</h3>
-
             <p>
               イヤホンパッドSはNo.3、MはNo.5、
               LはNo.7を基準とし、前後のサイズを含めて
@@ -1844,9 +1929,7 @@
 
           <article class="wear-step">
             <div class="wear-number">02</div>
-
             <h3>耳に装着する</h3>
-
             <p>
               耳珠・外耳孔と対輪の間に嵌めて、
               安定するサイズのVital Ear Plugを選定してください。
@@ -1856,9 +1939,7 @@
 
           <article class="wear-step">
             <div class="wear-number">03</div>
-
             <h3>装着状態を確認する</h3>
-
             <p>
               強い圧迫や痛みがなく、外れにくい位置で安定し、
               外音取り込み孔が塞がれていないことを確認します。
@@ -1899,10 +1980,11 @@
       </div>
     </section>
 
-    <!-- 手入れ -->
     <section class="section section-sky">
       <div class="container">
-        <div class="eyebrow">Care &amp; Maintenance</div>
+        <div class="eyebrow">
+          Care &amp; Maintenance
+        </div>
 
         <h2 class="section-title">
           日常のお手入れと衛生管理
@@ -1950,7 +2032,6 @@
       </div>
     </section>
 
-    <!-- まとめ -->
     <section class="section section-dark">
       <div class="container">
         <div class="eyebrow">Key Points</div>
@@ -2033,13 +2114,13 @@
         </div>
       </div>
     </section>
-  
 
-    <!-- クロージング -->
     <section class="closing" id="closing">
       <div class="container">
         <div class="closing-inner">
-          <div class="closing-eyebrow">A New Recovery Routine</div>
+          <div class="closing-eyebrow">
+            A New Recovery Routine
+          </div>
 
           <h2 class="closing-title">
             「耳から整える」という、<br>
@@ -2061,24 +2142,33 @@
       </div>
 
       <div class="closing-information">
-        <div class="container closing-credits">
-          <p>
-            <span class="credit-row">監修：水元医院 院長 平瀬悦子 医師</span>
-            <span class="credit-separator">｜</span>
-            <span class="credit-row">販売元：株式会社龍洗　〒125-0032 東京都葛飾区水元４丁目２２−６</span>
-          </p>
-          <p>
-            <span class="credit-row">Produced by MDA</span>
-            <span class="credit-separator">｜</span>
-            <span class="credit-row">Supervised by Dr. Etsuko Hirase (Mizumoto Clinic)</span>
-          </p>
-          <p>© 2026 Comprehensive Sleep Knowledge Project</p>
-        </div>
-      </div>
+  <div class="container closing-credits">
+    <p>
+      <span class="credit-row">
+        監修：水元医院 院長 平瀬悦子 医師
+      </span>
+      <span class="credit-separator">｜</span>
+      <span class="credit-row">
+        販売元：株式会社龍洗　〒125-0032 東京都葛飾区水元４丁目２２−６
+      </span>
+    </p>
+
+    <p>
+      <span class="credit-row">
+        Produced by MDA
+      </span>
+      <span class="credit-separator">｜</span>
+      <span class="credit-row">
+        Supervised by Dr. Etsuko Hirase (Mizumoto Clinic)
+      </span>
+    </p>
+
+    <p>
+      © 2026 Comprehensive Sleep Knowledge Project
+    </p>
+  </div>
+</div>
     </section>
-
   </main>
-
-  
 </body>
 </html>
